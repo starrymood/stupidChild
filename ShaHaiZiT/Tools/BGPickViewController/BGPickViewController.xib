@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BGPickViewController">
+            <connections>
+                <outlet property="TEST" destination="2Y3-bW-3yI" id="Evh-NP-L4d"/>
+                <outlet property="backView" destination="nnm-HT-LwZ" id="0Yf-ga-yFT"/>
+                <outlet property="pickView" destination="UNA-ip-jU2" id="zAZ-fO-FXD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Y3-bW-3yI">
+                    <rect key="frame" x="0.0" y="425" width="375" height="242"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Dw-AG-bze">
+                            <rect key="frame" x="317" y="8" width="50" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="5RR-Cd-EjQ"/>
+                                <constraint firstAttribute="height" constant="30" id="ino-Am-o2I"/>
+                            </constraints>
+                            <state key="normal" title="完成">
+                                <color key="titleColor" red="0.17254901960784313" green="0.81568627450980391" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="submit:" destination="-1" eventType="touchUpInside" id="TvJ-z4-Kif"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEm-tg-II2">
+                            <rect key="frame" x="8" y="8" width="50" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="3Rq-zR-WiF"/>
+                            </constraints>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancel:" destination="-1" eventType="touchUpInside" id="NVS-lj-aTi"/>
+                            </connections>
+                        </button>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNA-ip-jU2">
+                            <rect key="frame" x="0.0" y="46" width="375" height="202"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="202" id="ZmX-wS-4pN"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="hd5-p3-5RN"/>
+                                <outlet property="delegate" destination="-1" id="pd4-ec-hr9"/>
+                            </connections>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95285779240000001" green="0.95299452539999996" blue="0.95282799009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="UNA-ip-jU2" secondAttribute="trailing" id="33D-na-f7i"/>
+                        <constraint firstAttribute="trailing" secondItem="3Dw-AG-bze" secondAttribute="trailing" constant="8" id="3FN-6s-hHE"/>
+                        <constraint firstItem="PEm-tg-II2" firstAttribute="top" secondItem="2Y3-bW-3yI" secondAttribute="top" constant="8" id="5nD-Ov-iB5"/>
+                        <constraint firstItem="3Dw-AG-bze" firstAttribute="top" secondItem="2Y3-bW-3yI" secondAttribute="top" constant="8" id="H4g-Ng-qxb"/>
+                        <constraint firstAttribute="height" constant="242" id="KD4-0N-ut0"/>
+                        <constraint firstAttribute="bottom" secondItem="UNA-ip-jU2" secondAttribute="bottom" constant="-6" id="Ryb-ah-col"/>
+                        <constraint firstItem="PEm-tg-II2" firstAttribute="leading" secondItem="2Y3-bW-3yI" secondAttribute="leading" constant="8" id="bCM-x3-Y6D"/>
+                        <constraint firstItem="UNA-ip-jU2" firstAttribute="leading" secondItem="2Y3-bW-3yI" secondAttribute="leading" id="m6N-ri-N1S"/>
+                    </constraints>
+                </view>
+                <view multipleTouchEnabled="YES" alpha="0.050000000000000003" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nnm-HT-LwZ">
+                    <rect key="frame" x="0.0" y="64" width="375" height="351"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nnm-HT-LwZ" secondAttribute="trailing" id="9je-6w-Hm6"/>
+                <constraint firstItem="nnm-HT-LwZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="WaZ-oH-GqD"/>
+                <constraint firstItem="nnm-HT-LwZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Z1s-qj-8Xj"/>
+                <constraint firstAttribute="trailing" secondItem="2Y3-bW-3yI" secondAttribute="trailing" id="g00-TI-uta"/>
+                <constraint firstItem="2Y3-bW-3yI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rTG-8g-Bk2"/>
+                <constraint firstAttribute="bottom" secondItem="2Y3-bW-3yI" secondAttribute="bottom" id="xvV-Gt-xwP"/>
+                <constraint firstItem="2Y3-bW-3yI" firstAttribute="top" secondItem="nnm-HT-LwZ" secondAttribute="bottom" constant="10" id="yLz-dF-ZyZ"/>
+            </constraints>
+            <point key="canvasLocation" x="33" y="66"/>
+        </view>
+    </objects>
+</document>

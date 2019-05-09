@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BGAirRightCell" id="gTV-IL-0wX" customClass="BGAirRightCell">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="282" height="215"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C9J-cG-RTI">
+                        <rect key="frame" x="0.0" y="0.0" width="282" height="215"/>
+                    </imageView>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9N-uX-Qsi">
+                        <rect key="frame" x="0.0" y="0.0" width="282" height="215"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="傻孩子" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyZ-1o-krs">
+                                <rect key="frame" x="10" y="87" width="262" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="傻孩子" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKR-5H-1Gx">
+                                <rect key="frame" x="10" y="111.5" width="262" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="傻孩子" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6r-ak-iCo">
+                                <rect key="frame" x="10" y="99" width="262" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.29668243838028169" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gyZ-1o-krs" firstAttribute="centerY" secondItem="H9N-uX-Qsi" secondAttribute="centerY" constant="-12" id="1bN-IE-auW"/>
+                            <constraint firstAttribute="trailing" secondItem="gyZ-1o-krs" secondAttribute="trailing" constant="10" id="NGY-UD-MZt"/>
+                            <constraint firstItem="F6r-ak-iCo" firstAttribute="leading" secondItem="H9N-uX-Qsi" secondAttribute="leading" constant="10" id="Rpn-j3-9PI"/>
+                            <constraint firstItem="nKR-5H-1Gx" firstAttribute="centerY" secondItem="H9N-uX-Qsi" secondAttribute="centerY" constant="12" id="SnH-rm-YI2"/>
+                            <constraint firstAttribute="trailing" secondItem="F6r-ak-iCo" secondAttribute="trailing" constant="10" id="X94-3M-S99"/>
+                            <constraint firstItem="F6r-ak-iCo" firstAttribute="centerY" secondItem="H9N-uX-Qsi" secondAttribute="centerY" id="ZTk-Rm-Dyq"/>
+                            <constraint firstItem="nKR-5H-1Gx" firstAttribute="leading" secondItem="H9N-uX-Qsi" secondAttribute="leading" constant="10" id="bd3-TH-fXH"/>
+                            <constraint firstAttribute="trailing" secondItem="nKR-5H-1Gx" secondAttribute="trailing" constant="10" id="dFc-Ty-ABB"/>
+                            <constraint firstItem="gyZ-1o-krs" firstAttribute="leading" secondItem="H9N-uX-Qsi" secondAttribute="leading" constant="10" id="fR0-qt-141"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="H9N-uX-Qsi" secondAttribute="trailing" id="2KY-DK-RiR"/>
+                <constraint firstItem="C9J-cG-RTI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3L3-al-eaS"/>
+                <constraint firstAttribute="bottom" secondItem="H9N-uX-Qsi" secondAttribute="bottom" id="4Ww-qV-wC9"/>
+                <constraint firstAttribute="trailing" secondItem="C9J-cG-RTI" secondAttribute="trailing" id="4eZ-MD-dfP"/>
+                <constraint firstAttribute="bottom" secondItem="C9J-cG-RTI" secondAttribute="bottom" id="Did-pl-7Fe"/>
+                <constraint firstItem="C9J-cG-RTI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Vrg-Jc-NiJ"/>
+                <constraint firstItem="H9N-uX-Qsi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cip-Er-aU6"/>
+                <constraint firstItem="H9N-uX-Qsi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jkG-M4-fGY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="282" height="215"/>
+            <connections>
+                <outlet property="airBgImgView" destination="C9J-cG-RTI" id="MtD-zD-hTi"/>
+                <outlet property="airCityLabel" destination="gyZ-1o-krs" id="f6c-dD-FkP"/>
+                <outlet property="airPortLabel" destination="nKR-5H-1Gx" id="AP7-W9-aGK"/>
+                <outlet property="carLabel" destination="F6r-ak-iCo" id="CVr-VR-bEJ"/>
+            </connections>
+            <point key="canvasLocation" x="168" y="165.96701649175412"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="BGRecommendView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="289"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tf8-4j-rmd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="傻孩子分享有礼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9p-Yu-KEX">
+                            <rect key="frame" x="134" y="13.5" width="107.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pup-ez-Y7r">
+                            <rect key="frame" x="320" y="0.0" width="45" height="45"/>
+                            <state key="normal" image="wallet_quit"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.17254901959999999" green="0.81568627449999997" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="d9p-Yu-KEX" firstAttribute="centerX" secondItem="tf8-4j-rmd" secondAttribute="centerX" id="EXW-88-L6Q"/>
+                        <constraint firstItem="Pup-ez-Y7r" firstAttribute="top" secondItem="tf8-4j-rmd" secondAttribute="top" id="Z9l-Eh-g5W"/>
+                        <constraint firstAttribute="trailing" secondItem="Pup-ez-Y7r" secondAttribute="trailing" constant="10" id="gTD-jv-sEl"/>
+                        <constraint firstAttribute="bottom" secondItem="Pup-ez-Y7r" secondAttribute="bottom" id="jHo-H7-K0m"/>
+                        <constraint firstItem="d9p-Yu-KEX" firstAttribute="centerY" secondItem="tf8-4j-rmd" secondAttribute="centerY" id="vv2-FA-BQW"/>
+                        <constraint firstAttribute="height" constant="45" id="wng-4k-vul"/>
+                        <constraint firstItem="Pup-ez-Y7r" firstAttribute="width" secondItem="Pup-ez-Y7r" secondAttribute="height" id="xAP-wX-2fv"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fC-hU-4rQ">
+                    <rect key="frame" x="20" y="65" width="335" height="82"/>
+                    <attributedString key="attributedText">
+                        <fragment content="您通过〖分享有礼〗推荐了">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="14" name="STSong"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="1位">
+                            <attributes>
+                                <color key="NSColor" red="0.9882352941176471" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STSong"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="小伙伴成功注册了傻孩子，傻孩子向您派送">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="14" name="STSong"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="1元">
+                            <attributes>
+                                <color key="NSColor" red="0.9882352941176471" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STSong"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="红包，请打开〖我的佣金〗查收确认。 〖PS：通过您推荐成功注册的小伙伴在傻孩子平台消费后，您也将获得数额不等的佣金提成〗">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="14" name="STSong"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxO-22-DAm">
+                    <rect key="frame" x="99.5" y="224" width="176" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="176" id="9oH-T8-NO4"/>
+                        <constraint firstAttribute="height" constant="40" id="a9h-2o-Pho"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="btn_bgColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="NxO-22-DAm" secondAttribute="bottom" constant="25" id="8PV-Co-6ey"/>
+                <constraint firstItem="tf8-4j-rmd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FAL-Uc-Lq1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0fC-hU-4rQ" secondAttribute="trailing" constant="20" id="Ktc-vn-WgK"/>
+                <constraint firstItem="0fC-hU-4rQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="PBi-PZ-kis"/>
+                <constraint firstItem="NxO-22-DAm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SI8-vS-Ahr"/>
+                <constraint firstItem="tf8-4j-rmd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="THC-E7-Vx4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tf8-4j-rmd" secondAttribute="trailing" id="gnc-Wd-fax"/>
+                <constraint firstItem="0fC-hU-4rQ" firstAttribute="top" secondItem="tf8-4j-rmd" secondAttribute="bottom" constant="20" id="kYp-Wc-TAE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="cancelBtn" destination="Pup-ez-Y7r" id="rhi-2y-pWp"/>
+                <outlet property="sureBtn" destination="NxO-22-DAm" id="apZ-lT-3Kh"/>
+            </connections>
+            <point key="canvasLocation" x="40.799999999999997" y="73.313343328335833"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_bgColor" width="680" height="102"/>
+        <image name="wallet_quit" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BGHotVideoListCell" rowHeight="259" id="KGk-i7-Jjw" customClass="BGHotVideoListCell">
+            <rect key="frame" x="0.0" y="0.0" width="475" height="259"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="475" height="258.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="傻孩子" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVm-hm-B0p">
+                        <rect key="frame" x="20" y="12" width="46" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="ywJ-6t-ctU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_cycle_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="xOi-fp-Uhw">
+                        <rect key="frame" x="0.0" y="37" width="475" height="182"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="182" id="Zsm-YN-Joa"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swD-op-Vqs">
+                        <rect key="frame" x="219" y="101" width="37" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="37" id="BWU-hu-Fuq"/>
+                            <constraint firstAttribute="height" constant="37" id="YFP-Wh-Xgl"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="new_allPlay_44x44_"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXa-dE-k9o">
+                        <rect key="frame" x="20" y="234.5" width="60" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="J23-UX-gCo"/>
+                            <constraint firstAttribute="height" constant="15" id="akj-sa-zek"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="0人" image="home_hot_video_like">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sB9-13-MDi">
+                        <rect key="frame" x="387" y="238" width="80" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="asw-fS-zmZ"/>
+                            <constraint firstAttribute="height" constant="12" id="l2h-I4-AjY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                        <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="0人观看" image="home_eye">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5J-Qh-apm">
+                        <rect key="frame" x="95" y="234.5" width="60" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Uv7-IV-Cs4"/>
+                            <constraint firstAttribute="width" constant="60" id="nww-YZ-gUR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="0人" image="home_hot_video_collection">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XVm-hm-B0p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="4wo-OS-Sm5"/>
+                    <constraint firstItem="sB9-13-MDi" firstAttribute="centerY" secondItem="v5J-Qh-apm" secondAttribute="centerY" constant="2" id="CLw-v3-CQz"/>
+                    <constraint firstItem="swD-op-Vqs" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="LGy-8R-WEh"/>
+                    <constraint firstAttribute="trailing" secondItem="xOi-fp-Uhw" secondAttribute="trailing" id="OKW-Fd-IJJ"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XVm-hm-B0p" secondAttribute="trailing" constant="15" id="QIY-vi-hFv"/>
+                    <constraint firstItem="HXa-dE-k9o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="SuR-N4-5hw"/>
+                    <constraint firstItem="swD-op-Vqs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-10" id="V6P-wt-mTz"/>
+                    <constraint firstItem="xOi-fp-Uhw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fM2-ww-VRM"/>
+                    <constraint firstItem="sB9-13-MDi" firstAttribute="centerY" secondItem="HXa-dE-k9o" secondAttribute="centerY" constant="2" id="fqW-Ph-oMa"/>
+                    <constraint firstItem="v5J-Qh-apm" firstAttribute="leading" secondItem="HXa-dE-k9o" secondAttribute="trailing" constant="15" id="g1g-Sl-5vf"/>
+                    <constraint firstItem="xOi-fp-Uhw" firstAttribute="top" secondItem="XVm-hm-B0p" secondAttribute="bottom" constant="10" id="hDO-zc-1Cx"/>
+                    <constraint firstItem="sB9-13-MDi" firstAttribute="top" secondItem="xOi-fp-Uhw" secondAttribute="bottom" constant="19" id="iav-MS-etn"/>
+                    <constraint firstAttribute="trailing" secondItem="sB9-13-MDi" secondAttribute="trailing" constant="8" id="wX3-bD-Xho"/>
+                    <constraint firstItem="XVm-hm-B0p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="xDW-5A-zII"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="videoCollectionBtn" destination="v5J-Qh-apm" id="8la-tL-qkb"/>
+                <outlet property="videoConcernBtn" destination="HXa-dE-k9o" id="Xjf-wE-Rdq"/>
+                <outlet property="videoImgView" destination="xOi-fp-Uhw" id="0kn-Df-l6X"/>
+                <outlet property="videoTitleLabel" destination="XVm-hm-B0p" id="rxU-Z1-BOC"/>
+                <outlet property="videoWatchBtn" destination="sB9-13-MDi" id="GFu-bn-VHH"/>
+            </connections>
+            <point key="canvasLocation" x="111.5" y="191.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home_eye" width="11.5" height="8"/>
+        <image name="home_hot_video_collection" width="10" height="10"/>
+        <image name="home_hot_video_like" width="10" height="10"/>
+        <image name="img_cycle_placeholder" width="652" height="400"/>
+        <image name="new_allPlay_44x44_" width="44" height="44"/>
+    </resources>
+</document>

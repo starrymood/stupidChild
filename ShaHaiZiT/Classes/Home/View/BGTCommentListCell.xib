@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BGTCommentListCell" rowHeight="109" id="KGk-i7-Jjw" customClass="BGTCommentListCell">
+            <rect key="frame" x="0.0" y="0.0" width="497" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="497" height="110.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultUserIcon" translatesAutoresizingMaskIntoConstraints="NO" id="R51-sG-x2e">
+                        <rect key="frame" x="17" y="12" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="2a2-cm-LUL"/>
+                            <constraint firstAttribute="width" constant="26" id="G45-xE-OEL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="傻孩子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCF-CK-nZE">
+                        <rect key="frame" x="48" y="18.5" width="34" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment_star_five" translatesAutoresizingMaskIntoConstraints="NO" id="au4-tG-PTk">
+                        <rect key="frame" x="368" y="18" width="100" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="au4-tG-PTk" secondAttribute="height" multiplier="251:34" id="J1G-Yg-vda"/>
+                            <constraint firstAttribute="width" constant="100" id="WHq-tT-WSg"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2G-ak-ib0">
+                        <rect key="frame" x="21" y="44" width="455" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="z4k-z7-umk"/>
+                        </constraints>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fot-7r-9W1">
+                        <rect key="frame" x="0.0" y="74" width="497" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="DDH-zz-Fpk"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="傻孩子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN8-9f-o3s">
+                        <rect key="frame" x="29" y="82" width="34" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VCF-CK-nZE" firstAttribute="leading" secondItem="R51-sG-x2e" secondAttribute="trailing" constant="5" id="09D-bd-ZcG"/>
+                    <constraint firstAttribute="trailing" secondItem="au4-tG-PTk" secondAttribute="trailing" constant="29" id="4nn-sb-U4r"/>
+                    <constraint firstItem="v2G-ak-ib0" firstAttribute="top" secondItem="R51-sG-x2e" secondAttribute="bottom" constant="6" id="56W-QP-QxF"/>
+                    <constraint firstItem="v2G-ak-ib0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="EBu-kO-76I"/>
+                    <constraint firstItem="R51-sG-x2e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Ebq-qS-iZ1"/>
+                    <constraint firstAttribute="bottom" secondItem="fN8-9f-o3s" secondAttribute="bottom" constant="14.5" id="P8m-x2-3Ye"/>
+                    <constraint firstItem="fN8-9f-o3s" firstAttribute="top" secondItem="Fot-7r-9W1" secondAttribute="bottom" constant="7" id="Sfx-Vm-Ue8"/>
+                    <constraint firstItem="fN8-9f-o3s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="29" id="VL5-48-CKf"/>
+                    <constraint firstItem="Fot-7r-9W1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VyK-rq-EoW"/>
+                    <constraint firstItem="au4-tG-PTk" firstAttribute="centerY" secondItem="R51-sG-x2e" secondAttribute="centerY" id="WUA-FU-3lq"/>
+                    <constraint firstItem="VCF-CK-nZE" firstAttribute="centerY" secondItem="R51-sG-x2e" secondAttribute="centerY" id="edf-ZY-jdO"/>
+                    <constraint firstAttribute="trailing" secondItem="Fot-7r-9W1" secondAttribute="trailing" id="fZH-Ou-enF"/>
+                    <constraint firstItem="R51-sG-x2e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="lIN-zI-Wan"/>
+                    <constraint firstAttribute="trailing" secondItem="v2G-ak-ib0" secondAttribute="trailing" constant="21" id="nla-Ix-EWG"/>
+                    <constraint firstItem="Fot-7r-9W1" firstAttribute="top" secondItem="v2G-ak-ib0" secondAttribute="bottom" id="scr-vz-hRh"/>
+                    <constraint firstItem="au4-tG-PTk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VCF-CK-nZE" secondAttribute="trailing" constant="10" id="x4a-EG-tJ8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="cGradesImgView" destination="au4-tG-PTk" id="UQL-WQ-lT7"/>
+                <outlet property="cHeadImgView" destination="R51-sG-x2e" id="UrT-dH-T98"/>
+                <outlet property="cNickNameLabel" destination="VCF-CK-nZE" id="aH4-xJ-ISO"/>
+                <outlet property="cNoteView" destination="v2G-ak-ib0" id="oH2-p2-Zsy"/>
+                <outlet property="cTimeLabel" destination="fN8-9f-o3s" id="jeL-hW-tpw"/>
+                <outlet property="noteViewHeight" destination="z4k-z7-umk" id="vpT-up-cXg"/>
+                <outlet property="picView" destination="Fot-7r-9W1" id="eZx-zl-Qds"/>
+                <outlet property="picViewHeight" destination="DDH-zz-Fpk" id="zli-nr-wIi"/>
+            </connections>
+            <point key="canvasLocation" x="112.5" y="106.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="comment_star_five" width="77" height="10.5"/>
+        <image name="defaultUserIcon" width="50" height="50"/>
+    </resources>
+</document>
